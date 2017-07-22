@@ -1,0 +1,70 @@
+include templates/header.pug
+  body
+    include templates/nav.pug
+    .form-page
+      .cover
+        img(class="responsive-img" src="img/slider2.jpg")
+      .form
+        .card.question
+          .container
+            .about-me
+              h5.form-title Crea tu usuario
+              .row
+                .col.l4
+                  img(src="img/icons/svg/051-newborn.svg")
+                .col.l8
+                  div(class="input-field")
+                    label(for="first_name") Nombre de usuario
+                    input(id="name" type="text" class="validate")
+                  div(class="input-field")
+                    label(for="email") Correo electrónico
+                    input(id="email" type="email" class="validate")
+                  div(class="input-field")
+                    label(for="password") Contraseña
+                    input(id="password" type="password" class="validate")
+            .interest
+              h5.form-title ¿En qué te consideras experta?
+              .row
+                .col.l4
+                  img(src="img/icons/svg/051-watering-can.svg")
+                .col.l8
+                  .row
+                    .col.l6
+                      input(type='checkbox' id="blue")
+                      label(for='blue') Red
+                    .col.l6
+                      input(type='checkbox' id="test")
+                      label(for='test') Red
+                    .col.l6
+                      input(type='checkbox' id="blue")
+                      label(for='blue') Red
+                    .col.l6
+                      input(type='checkbox' id="test")
+                      label(for='test') Red
+            .children
+              h5.form-title ¿Cuántos hijos tienes?
+              .row
+                .col.l4
+                  img(src="img/icons/svg/051-motherhood-2.svg")
+                .col.l8
+                  .row
+                    .input-field.col.l4
+                      select
+                        option(value='men' selected) Niño
+                        option(value='women') NIña
+                      label Sexo
+                    .input-field.col.l4
+                      label(for="age") Edad
+                      input(id="age" type="text" class="validate")
+                    .col.l4
+                    a.btn-floating.btn-large.red
+                      i.material-icons add
+              .row.center
+                a(href="results.html" class="btn pink") Finalizar
+            
+
+
+            
+
+      
+  include templates/scripts.pug

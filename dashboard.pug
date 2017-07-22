@@ -1,0 +1,30 @@
+include templates/header.pug
+  body
+    include templates/nav.pug
+    .dashboard
+      include templates/sidebar.pug
+      .content
+        h4.section-title.pink-text HOLA CRAYOLA
+        .row.search-form-wrapper
+          form
+            .search-wrapper.card
+              input#search
+              i.material-icons search
+        .row
+            include templates/card-pink
+            include templates/card-blue
+            include templates/card-green
+        h4.section-title.pink-text TUS MENTORAS
+        .row
+          .col.l3.m4.s6
+            include templates/card
+          .col.l3.m4.s6
+            include templates/card
+          .col.l3.m4.s6
+            include templates/card
+        h4.section-title.pink-text TUS GRUPOS
+
+
+            
+  include templates/scripts.pug
+
