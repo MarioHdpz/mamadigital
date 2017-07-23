@@ -4,16 +4,12 @@ include templates/header.pug
     .dashboard
       include templates/sidebar.pug
       .content
-        h4.section-title.pink-text HOLA CRAYOLA
         .row.search-form-wrapper
           form
             .search-wrapper.card
-              input#search
-              i.material-icons search
-        .row
-            include templates/card-pink
-            include templates/card-blue
-            include templates/card-green
+              input#search(placeholder="¿Qué estás buscando?")
+              a.btn-floating.btn-large.waves-effect.waves-light.pink
+                i.material-icons search
         h4.section-title.pink-text TUS MENTORAS
         .row
           .col.l3.m4.s6
@@ -23,6 +19,10 @@ include templates/header.pug
           .col.l3.m4.s6
             include templates/card
         h4.section-title.pink-text TUS GRUPOS
+        .row
+            include templates/card-pink
+            include templates/card-blue
+            include templates/card-green
 
 
             
