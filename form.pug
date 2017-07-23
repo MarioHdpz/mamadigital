@@ -22,25 +22,43 @@ include templates/header.pug
                   div(class="input-field")
                     label(for="password") Contraseña
                     input(id="password" type="password" class="validate")
-            .interest
-              h5.form-title ¿En qué te consideras experta?
+            .expertise
+              h5.form-title ¿Cuáles son tus áreas de experiencia?
               .row
                 .col.l4
-                  img(src="img/icons/svg/051-watering-can.svg")
+                  img(src="img/icons/svg/051-coffee-cup.svg")
                 .col.l8
                   .row
                     .col.l6
                       input(type='checkbox' id="blue")
-                      label(for='blue') Red
+                      label(for='blue') Nutrición
                     .col.l6
                       input(type='checkbox' id="test")
-                      label(for='test') Red
+                      label(for='test') Psicología
                     .col.l6
                       input(type='checkbox' id="blue")
-                      label(for='blue') Red
+                      label(for='blue') Ventas
                     .col.l6
                       input(type='checkbox' id="test")
-                      label(for='test') Red
+                      label(for='test') Marketing
+                    .col.l6
+                      input(type='checkbox' id="blue")
+                      label(for='blue') Textiles
+                    .col.l6
+                      input(type='checkbox' id="test")
+                      label(for='test') Negocios
+                    .col.l6
+                      input(type='checkbox' id="blue")
+                      label(for='blue') Medicina
+                    .col.l6
+                      input(type='checkbox' id="test")
+                      label(for='test') RR.PP.    
+                    .col.l6
+                      input(type='checkbox' id="blue")
+                      label(for='blue') Educación
+                    .col.l6
+                      input(type='checkbox' id="test")
+                      label(for='test') Tecnología   
             .children
               h5.form-title ¿Cuántos hijos tienes?
               .row
@@ -58,7 +76,7 @@ include templates/header.pug
                       input(id="age" type="text" class="validate")
                     .col.l4
                     a.btn-floating.btn-large.red
-                      i.material-icons add
+                      i.material-icons add  
               .row.center
                 a(href="results.html" class="btn pink") Finalizar
             
