@@ -8,23 +8,25 @@ include templates/header.pug
           form
             .search-wrapper.card
               input#search(placeholder="¿Qué estás buscando?")
-              a.btn-floating.btn-large.waves-effect.waves-light.pink
+              a#search-button.btn-floating.btn-large.waves-effect.waves-light.pink
                 i.material-icons search
-        h4.section-title.pink-text TUS MENTORAS
-        .row
-          
-          include templates/questions/q.pug
+        .calendar
+          #calendar
+        .baby1
+          h5.section-title.pink-text.popular Dudas populares en "Rebozo amarillo"
+          .row.questions.popular
+            include templates/questions/q.pug
+        .baby2
+          h5.section-title.pink-text Dudas populares en "Rebozo verde"
+          .row.questions
+            include templates/questions/f.pug
+        h5.section-title.pink-text.results Resultados para "papilla"
+        h6.results ¿No encuentras lo que buscas? 
+        a.results Haz tu propia pregunta
+        .row.questions.results
+          include templates/questions/results.pug
+
+
         
-          .col.l3.m4.s6
-            include templates/card
-          .col.l3.m4.s6
-            include templates/card
-          .col.l3.m4.s6
-            include templates/card
-        h4.section-title.pink-text TUS GRUPOS
-        .row
-            include templates/card-pink
-            include templates/card-blue
-            include templates/card-green
             
   include templates/scripts.pug

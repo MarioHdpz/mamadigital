@@ -1,19 +1,37 @@
 .panel
   .user-view
-    img.circle(src='img/profile.jpg')
-    span.white-text.name Hola Crayola
-    a(href='#!email')
-      span.white-text.email jdandturk@gmail.com
-    .collection
-      a.collection-item(href='#!')
-        | Etapa: 1
-        div.level Embarazo - Lactancia
-      a.collection-item(href='#!')
-        | Guía rápida
-      a.collection-item(href='#!')
-        | Mi Cuponera
-      a.collection-item(href='#!')
-        span.new.badge.red 5
-        | Mensajes
-      a.collection-item(href='#!')
-        | Sesiones en vivo
+    .row
+      img.circle(src='img/profile.jpg')
+    .row.center
+      h5.name Lorena H.
+      h6.email lorena.hf@gmail.com
+      h5.email.pink-text '5' puntos mamá
+    form  
+      .input-field.col.l4
+        select#baby-select
+          option(value='men' selected) Santiago
+          option(value='women') Sandra
+    .row.baby1
+        include card-pink
+        .collection
+          a.collection-item.selected(href='#!')
+            | Guía rápida
+          a.collection-item(href='#!')
+            | Redimir puntos
+          a.collection-item(href='#!')
+            span.new.badge.red 1
+            | Mensajes
+          a#sessions.collection-item(href='#!')
+            | Sesiones en vivo
+    .row.baby2
+        include card-green
+        .collection
+          a.collection-item.selected(href='#!')
+            | Guía rápida
+          a.collection-item(href='#!')
+            | Redimir puntos
+          a.collection-item(href='#!')
+            span.new.badge.red 1
+            | Mensajes
+          a#sessions.collection-item(href='#!')
+            | Sesiones en vivo

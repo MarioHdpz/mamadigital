@@ -1,6 +1,7 @@
 @import 'base/normalize.scss'
 @import 'base/reset.scss'
 @import 'base/materialize.scss'
+@import '_materialFullCalendar.scss'
 
 body
   //background-color: #E91E63
@@ -14,6 +15,9 @@ body
 .register-form
   display: none
 
+
+.baby2
+  display: none
 /*Main page*/  
 .main-page
   .main
@@ -30,6 +34,8 @@ body
 
 /*Form*/
 .form-page
+  .new-child
+    display: none
   .cover
     width: 100%
     position: fixed
@@ -49,6 +55,8 @@ body
           text-align: center
 /*Dashboard*/
 .dashboard
+  .results
+    display: none
   .section-title
     font-weight: bold
     text-transform: uppercase
@@ -63,6 +71,10 @@ body
       img
         width: 200px
         height: 200px
+    .collection-item
+      font-weight: bold
+      &.selected
+        background-color: #ddd
   .content
     height: 100vh
     width: 80%
@@ -75,7 +87,17 @@ body
         border: 0
         width: 90%
         margin: 0 5%
+      &.has-results
+        padding: 20px 0
       .btn-floating
         position: absolute
+    .questions
+      .collapsible-header
+        font-weight: bold
+        .favorite
+              position: absolute
+              right: 10px
+              cursor: pointer
+      
         
 

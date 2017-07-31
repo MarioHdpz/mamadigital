@@ -66,19 +66,39 @@ include templates/header.pug
                   img(src="img/icons/svg/051-motherhood-2.svg")
                 .col.l8
                   .row
-                    .input-field.col.l4
+                    .input-field.col.l3
                       select
                         option(value='men' selected) Niño
-                        option(value='women') NIña
+                        option(value='women') Niña
                       label Sexo
-                    .input-field.col.l4
+                    .input-field.col.l3
+                      label(for="name") Nombre
+                      input(id="name" type="text" class="validate")
+                    .input-field.col.l3
                       label(for="age") Edad
                       input(id="age" type="text" class="validate")
-                    .col.l4
+                    .col.l3
                     a.btn-floating.btn-large.red
-                      i.material-icons add  
+                      i.material-icons#add-child add
+                  .row.new-child
+                    .input-field.col.l3
+                      select
+                        option(value='men' selected) Niño
+                        option(value='women') Niña
+                      label Sexo
+                    .input-field.col.l3
+                      label(for="name") Nombre
+                      input(id="name" type="text" class="validate")
+                    .input-field.col.l3
+                      label(for="age") Edad
+                      input(id="age" type="text" class="validate")
+                    .col.l3
+                    a.btn-floating.btn-large.red
+                      i.material-icons add
+            
+                    
               .row.center
-                a(href="results.html" class="btn pink") Finalizar
+                a(href="dashboard.html" class="btn pink") Finalizar
             
 
 
